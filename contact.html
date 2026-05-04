@@ -1,0 +1,213 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Biam House | Contact</title>
+<head> 
+  <style>
+     body{
+        background-image: URL("me.JPG");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top:20px;     
+        text-align:center;     
+        padding:40px; 
+        font-family: arial;
+     }
+
+     form{
+        padding: 1%;
+       width: 500px;
+       height: 600px;
+       margin: 100PX auto;
+       background:white;
+       border-radius: 12px;
+       box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+     }
+
+
+     /* NAV */ nav{  
+           background:#0b1c39;  
+              padding:20px;    
+               display:flex;    
+                justify-content:space-between;    
+                 align-items:center; 
+} 
+ 
+ .logo{     
+    color:#00bcd4;    
+     font-size:28px;    
+      font-weight:bold; 
+ } 
+  
+ nav ul{    
+     list-style:none;   
+       display:flex;    
+        gap:20px; 
+ } 
+  
+ nav ul li a{    
+     color:white;   
+       text-decoration:none; 
+ } 
+  
+ nav ul li a:hover{
+
+    color:#00bcd4; 
+ }
+
+     ligne{
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 16px;
+        background:white;
+        color: #000;
+     }
+
+     .champ label{
+        margin-top: 5px;
+        color:blues;
+        font-weight: bold;
+     }
+
+     .ligne input{
+        width: 80%;
+        padding: 10px;
+        margin: 20px 0;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 16px;
+        background: #f1f1f1;
+        color: #000;
+       
+     }
+
+
+        h1 {
+            color:#00bcd4;
+            margin-left: 32%;
+            position: absolute;
+        }
+    
+     input,textarea,select{
+            width: 80%;
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            background: #f1f1f1;
+            color: #000;
+        }
+        input:focus {
+            border-color: #4facfe;
+            outline: none;
+        }
+
+        label{
+            color:#00bcd4;
+            text-transform: uppercase;
+            font-size: 10px;
+            letter-spacing: 2px;
+            padding-left: 10px;
+            display: block;
+            width: 20%;
+            margin: 5px 0;
+            
+        }
+
+        .lab{
+            white-space: nowrap;
+        }
+
+button{
+     width: 85%;
+     height: 50px;
+     padding: 10px;
+     margin-top: -5px;
+     background: #4facfe;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+    font-size: 16px;
+   
+}
+
+#msg{    
+   margin-top:10px;   
+   font-weight:bold; 
+} 
+
+button:hover {
+            background: #00c6ff;
+        } 
+ 
+   </style>
+ </head>
+ 
+ 
+<body> 
+
+    <nav> 
+        <div class="logo">Biam House</div> 
+     
+        <ul> 
+            <li><a href="index.html">Accueil</a></li> 
+            <li><a href="biens.html">Biens</a></li> 
+            <li><a href="apropos.html">À propos</a></li> 
+            <li><a href="contact.html">Contact</a></li> 
+        </ul> 
+    </nav> 
+ 
+
+    <h1>CONTACTEZ Biam HOUSE</h1>
+<div class="champ"> 
+    <form method="POST"> 
+        <label>NOM COMPLET</label>
+        <div class="ligne">
+        <input type="nom" id="nom" placeholder="Votre nom"> 
+        
+    </div>
+
+    <div class="champ">
+        <label class="lab">ADRESSE EMAIL</label> 
+        <input type="email" id="email" placeholder="Votre email">
+
+    </div>
+
+    <div class="champ">
+        <label class="lab">NUMERO TELEPHONE</label>
+        <input type="tel" id="telephone" placeholder="Téléphone"> 
+
+    </div>
+
+    <div class="champ"></div>
+       <label>TYPE</label>
+        <select id="type"> 
+            <option value="">Type de demande</option> 
+            <option>Louer un bien</option>  
+            <option>Visite</option> 
+
+        </div>
+        </select> 
+        <label>MESSAGE</label>
+        <textarea id="message" placeholder="Votre message"></textarea> <br> 
+
+          <button type="submit" class="btn">Envoyer</button> 
+ 
+        <p id="msg"></p> 
+
+        <div class="login">
+            
+    </form> 
+ 
+</section>
+ 
+<script src="script.js"></script> 
+</body> 
+</html> 
