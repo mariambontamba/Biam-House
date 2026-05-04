@@ -1,0 +1,85 @@
+margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; 
+} 
+ 
+body{ background:#f5f5f5; color:#333; 
+} 
+ 
+nav{ display:flex; justify-content:space-between; align-items:center; padding:20px 60px; background:#0b1c39; position:fixed; width:100%; top:0; z-index:1000; 
+} 
+ 
+.logo{ color:#00bcd4; font-size:30px; font-weight:bold; 
+} 
+ 
+nav ul{ display:flex; list-style:none; 
+} 
+ 
+nav ul li{ margin-left:25px; 
+} 
+ 
+nav ul li a{ color:white; text-decoration:none; font-size:18px; transition:0.3s; 
+}
+ 
+nav ul li a:hover{ color:#00bcd4; 
+} 
+ 
+.hero{ height:100vh; background:url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6') center/cover; display:flex; justify-content:center; align-items:center; text-align:center; padding:20px; 
+} 
+ 
+.contenu{ background:rgba(0,0,0,0.6); padding:40px; border-radius:10px; color:white; 
+} 
+ 
+.contenu h2{ font-size:50px; margin-bottom:15px; 
+} 
+ 
+.contenu p{ font-size:20px; margin-bottom:20px; 
+} 
+ 
+.btn{ display:inline-block; padding:15px 30px; background:#00bcd4; color:#000; text-decoration:none; font-weight:bold; border-radius:5px; transition:0.3s; 
+} 
+.btn:hover{ background:white; 
+} 
+ 
+.stats{ display:flex; justify-content:space-around; padding:60px; background:white; text-align:center; 
+} 
+ 
+.stats h3{ font-size:35px; color:#0b1c39; 
+} 
+ 
+.services{ padding:60px 40px; text-align:center; 
+} 
+ 
+.services h2{ font-size:35px; margin-bottom:40px; color:#0b1c39; 
+} 
+ 
+.box-container{ display:flex; justify-content:center; gap:20px; flex-wrap:wrap; 
+} 
+ 
+.box{ background:white; padding:30px; width:280px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:0.3s; 
+} 
+.box:hover{ transform:translateY(-10px); 
+} 
+ 
+footer{ background:#0b1c39; color:white; text-align:center; padding:20px; 
+} 
+ 
+/* Responsive */ 
+ 
+@media(max-width:768px){ 
+ 
+nav{ flex-direction:column; padding:20px; 
+} 
+ 
+nav ul{ margin-top:15px; flex-direction:column; text-align:center; 
+} 
+ 
+nav ul li{ 
+margin:10px 0; 
+} 
+ 
+.contenu h2{ font-size:35px; 
+} 
+ 
+.stats{ flex-direction:column; gap:20px; 
+} 
+ 
+} 
